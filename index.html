@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<!--開発者の皆様こんにちは。ソースコードを閲覧頂きありがとうございます。-->
+<!--このソースコードは改変等は自由です。-->
+
+<head>
+    <!--初期設定-->
+    <!--CSSプリセット読み込み-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <meta charset="utf-8">
+    <title>サイゼリヤ｜メニュー番号解読ツール</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="【便利ツール】サイゼリヤのメニュー番号解読ツール【最新版】" />
+    <meta property="og:site_name" content="Ehor|Github" />
+    <meta property="og:description" content="サイゼリヤのメニュー番号をメニュー名に変換するツールです。友達からメニュー番号で送られたときにお使いください。" />
+</head>
+<!--HTML本体記述-->
+
+<body>
+    <div class="notification is-primary">
+        <button class="delete"></button>このツールは非公式です。このツールを使用して”いかなる弊害”が及んでも、製作者は一切責任を取りません。
+        <br>このツールを使用した時点で、これらに同意したことになります。
+    </div>
+    <div class="containers">
+        <div class="box">
+            <div class="box is-child notification is-primary">
+                <h1 class="title is-1">サイゼリヤ🥗</h1>
+
+                <h2 class="title is-4">メニュー番号解読ツール<br>(非公式)<br></h1>
+            </div>
+            <input class="input is-primary" id="search" type="text" placeholder="メニュー番号　例）SA02">
+            <button class="button is-primary" onclick="search()">検索</button>
+            <div class="box" id="menu-box">
+                <p></p>
+                <button class="button is-primary">#メニューの情報</button>
+                <h5 class="title is-4" id="search-num"></h5>
+                <h5 class="title is-5" id="menu-name"></h5>
+                <h4 class="title is-5" id="money"></h4>
+            </div>
+        </div>
+        <div class="box">
+            <p class="title is-3">✅このツールは何ですか？</p>
+            <p>サイゼリヤの「メニュー番号」から「メニュー名」に変換するツールです。<br>
+                友達から"サイゼリヤのメニュー番号"で送信されたときに、メニューの解読ができます。
+            </p>
+        </div>
+        <div class="box">
+            <p class="title is-3">✅作成したきっかけは何ですか？</p>
+            <p>本当に思い付きです。メニュー名から送られてきたので、解読できるプログラムを作ろうと思いました。
+            </p>
+        </div>
+    </div>
+</body>
+<!--以下footer-->
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            <strong>このアプリはEhor/えほ が作りました。</strong><br><a href="https://twitter.com/yami17214444">Twitterフォローをぜひ！</a>
+            <br>もし、サイゼリヤのメニューが更新された場合は
+            <br>TwitterのDMでお知らせください。よろしくお願いいたします。</a>
+        </p>
+    </div>
+</footer>
+<!--ここまでHTML-->
+<!--CSS追加-->
+<style>
+    #menu-box {
+        display: none;
+    }
+
+    .containers {
+        margin: 2.5em;
+    }
+
+    .is-1 {
+        font-size: 5vh !important;
+    }
+
+    input,
+    button,
+    .box {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+</style>
+<!--Javascript読み込み（最後）-->
+<script src="js/search.js"></script>
+
+</html>
