@@ -13,6 +13,11 @@
 友達からメニュー番号で送られたときにお使いください。
 メニュー番号を入力することにより、メニュー名に変換できます。
 
+また、メニューが変更されていたら
+TwitterのDMにてお問い合わせください。
+## 開発者のTwitter
+https://twitter.com/yami17214444
+
 ## ⚠注意事項
 このツールを使用して”いかなる弊害”が及んでも、製作者は一切責任を取りません。
 このツールを使用した時点で、これらに同意したことになります。
@@ -21,7 +26,9 @@
 以下のソースを参考に開発致しました。感謝申し上げます。
 
 ■グランド メニュー (日本語)
+
 http://book.saizeriya.co.jp/menu2212_j3/book/#target/
 
 ■【Javascript】CSVのデータを部分抽出
+
 https://algorithm.joho.info/programming/javascript/load-csv-part-extraction-js/
